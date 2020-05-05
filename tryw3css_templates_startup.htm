@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/macbook.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.nosotros {display:none}
+
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide"><img src="images/Logo.png" width="100" height="35"></a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">INICIO</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
+      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICIOS</a>
+      <a href="#clients" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> CLIENTES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTOS</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close &times;</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">INICIO</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">NOSOTROS</a>
+  <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">SERVICIOS</a>
+  <a href="#clients" onclick="w3_close()" class="w3-bar-item w3-button">CLIENTES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTOS</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">ESPECIALISTAS EN ASESORÍA DE PREVENCIÓN DE RIESGOS LABORALES</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
+    <span class="w3-large">Stop wasting valuable time with projects that just isn't you.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- SECCIÓN NOSOTROS -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h1 class="w3-center">QUIÉNES SOMOS</h1>
+  <p class="w3-large w3-container">APS INTEGRAL, es una consultoría de jóvenes profesionales que nace a mediados del año 2019, con el propósito de asesorar a empresas en materia de prevención de riesgos laborales.</p>
+  <p class="w3-large w3-container">Sus servicios están dirigido a pequeñas y medianas empresas, de distintos rubros, que requieran de servicios externalizados.</p>
+  <p class="w3-large w3-container">Sus principales objetivos son mejorar las condiciones de seguridad y salud ocupacional en los lugares de trabajo como también disminuir la siniestralidad y los costos que está genera a las empresas. </p>
+
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round-large w3-indigo w3-jumbo">Misión</button>
+    </div>
+    <div class="w3-third">
+      <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round-large w3-indigo w3-jumbo">Visión</button>
+    </div>
+    <div class="w3-third">
+      <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round-large w3-indigo w3-jumbo">Valores</button>
+    </div>
+  </div>
+</div>
+<!-- MODAL MISIÓN -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Misión</b></h3>
+	      <p>
+	      	<ul>
+				<li>Contribuir en integral la seguridad y salud ocupacional en la cultura de las empresas.</li>
+				<li>Promover una cultura de autocuidado en lo trabajadores a través de información, formación y conocimientos.</li>
+		    	<li>Mejorar los estándares de seguridad y salud ocupacional de las empresas a través de soluciones integrales que permitan mantener la continuidad operativa de sus procesos productivos.</li>
+			</ul>  
+	      </p>
+	    <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id01').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VISIÓN -->
+<div id="id02" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Visión</b></h3>
+	      <p>Ser, para nuestros clientes, un socio de confianza más allá del ámbito profesional.</p>
+	  <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id02').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL VALORES -->
+<div id="id03" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Valores</b></h3>
+	      <p>Nuestro trabajo no puede encontrase ajeno a nuestra vocación, por lo cual, nuestros valores son:
+	      	<ul>
+				<li><b>Responsabilidad:</b> Adquirimos un compromiso con nuestros clientes, siendo consientes de los recursos disponibles y proponiendo metas alcanzables.</li>
+				<li><b>Cercanía:</b> La cercanía con los trabajadores nos permite que conozcan lo que es la prevención, lo que puede hacer por nosotros y como nos puede ayudar en el trabajo, e indirectamente también en nuestros hogares.</li>
+				<li><b>Profesionalismo:</b> Permitiéndonos mejorar las condiciones de seguridad y salud ocupacional de los lugares de trabajo. Para ello, buscamos mejoras y soluciones acordes a las necesidades de nuestros clientes.</li>
+			</ul>  
+	      </p>
+	    <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id03').style.display='none'">Cerrar</button>
+	  	</div>
+    </div>
+  </div>
+</div>
+
+<!-- NUESTOS SERVICIOS -->
+<div class="w3-container" style="padding:128px 16px" id="services">
+  <h1 class="w3-center">NUESTOS SERVICIOS</h1>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+
+    <div class="w3-col w3-margin-bottom w3-third">
+      <div class="w3-card">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <div class="w3-container">
+          <h3>Asesoría</h3>
+          <p>Asesoramos sobre la normativa legal existente en materia de seguridad y salud ocupacional.</p>
+          <p><button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col w3-margin-bottom w3-third">
+      <div class="w3-card">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <div class="w3-container">
+          <h3>Instrumentos de Prevención</h3>
+          <p>Elaboramos los instrumentos básicos de prevención que debe contar toda empresa, de acuerdo a la legislación existente.</p>
+          <p><button onclick="document.getElementById('id05').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col w3-margin-bottom w3-third">
+      <div class="w3-card">
+        <div class="w3-container">
+          <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+          <h3>Identificación de Peligros</h3>
+          <p>Identificamos los peligros, evaluamos sus riesgos y proponemos las medidas para su control.</p>
+          <p><button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col w3-margin-bottom w3-half">
+      <div class="w3-card">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <div class="w3-container">
+          <h3>Capacitaciones</h3>
+          <p>Realizamos capacitaciones y charlas de seguridad.</p>
+          <p><button onclick="document.getElementById('id07').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-col w3-margin-bottom w3-half">
+      <div class="w3-card">
+        <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+        <div class="w3-container">
+          <h3>Planes y Procedimientos</h3>
+          <p>Elaboramos procedimientos y planes de emergencia.</p>
+          <p><button onclick="document.getElementById('id08').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL ASESORÍA -->
+<div id="id04" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Asesoría</b></h3>
+	      <p><ul>
+				<li><b>Ley Nº 16.744:</b> Sobre accidentes de trabajo y enfermedades profesionales.</li>
+				<li><b>DS Nº 594:</b> Sobre condiciones sanitarias y ambientales básicas en los lugares de trabajo.nosotros y como nos puede ayudar en el trabajo, e indirectamente también en nuestros hogares.</li>
+				<li><b>DS Nº 54:</b> Sobre constitución y funcionamiento de Comités Paritarios.</li>
+				<li><b>Ley Nº 20.123:</b>Sobre trabajo bajo régimen de subcontratación.</li>
+			</ul></p>
+	  <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id04').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PREVENCIÓN -->
+<div id="id05" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Instrumentos de Prevención</b></h3>
+	      <p><ul>
+				<li>Reglamento Interno de Higiene y Seguridad.</li>
+				<li>Reglamento Interno de Orden Higiene y Seguridad.</li>
+				<li>Reglamento Especial para Empresas Contratistas y Subcontratistas.</li>
+				<li>Obligación de Informar los Riesgos Laborales.</li>
+			</ul></p>
+	  <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id05').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PELIGROS -->
+<div id="id06" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Identificación de Peligros</b></h3>
+	      <p><ul>
+				<li>Evaluación y análisis de las condiciones de seguridad y medioambientales en los lugares de trabajo.</li>
+				<li>Análisis de seguridad en el trabajo.</li>
+				<li>Confección de matriz de peligros y evaluación de riesgos.</li>
+			</ul></p>
+	  <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id06').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CAPACITACIONES -->
+<div id="id07" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Capacitaciones</b></h3>
+	      <p><ul>
+				<li>Constitución y asesoría a Comités Paritarios.</li>
+				<li>Charlas de seguridad 5 minutos.</li>
+				<li>Trabajador Nuevo.</li>
+			</ul></p>
+	  <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id07').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL PLANES -->
+<div id="id08" class="w3-modal">
+  <div class="w3-modal-content">
+    <div class="w3-container">
+      <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+      <h3 class="w3-large"><b>Planes y Procedimientos</b></h3>
+	      <p><ul>
+				<li>Plan de Preparación y Respuesta ante una Emergencias.</li>
+				<li>Programa de Actividades de Prevención de Riesgos Laborales.</li>
+				<li>Procedimientos de Trabajo Seguro.</li>
+			</ul></p>
+	  <div class="w3-container w3-padding">
+	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id08').style.display='none'">Cerrar</button>
+	  </div>
+    </div>
+  </div>
+</div>
+
+<!-- CLIENTES Section -->
+<div class="w3-container" style="padding:128px 16px" id="clients">
+  <h1 class="w3-center">NUESTROS CLIENTES</h1>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="images/Imagen1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/Imagen2.png"  style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/Imagen3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/Imagen4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/Imagen5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="images/Imagen6.png"  style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h1 class="w3-center">CONTACTO</h1>
+  <div style="margin-top:48px">
+		<p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i>Rancagua, Región del Libertador Bernardo O’Higgins, Chile</p>
+		<p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i>+569 76594517</p>
+		<p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i>contacto@apsintegral.cl</p>
+		<br>
+	    <div class="w3-half">
+		    <form action="/action_page.php" target="_blank">
+		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Nombre" required name="Nombre"></p>
+		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Apellido" required name="Apellido"></p>
+		      <p><input class="w3-input w3-border w3-light-grey" type="email" placeholder="Email" required name="Email"></p>
+		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Asunto" required name="Asunto"></p>
+		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Mensaje" required name="Mensaje"></p>
+		      <p>
+		        <button class="w3-button w3-black" type="submit">
+		          <i class="fa fa-paper-plane"></i> ENVIAR
+		        </button>
+		      </p>
+		    </form>
+		</div>
+		<div class="w3-quarter">&nbsp</div>
+		<div>
+			<div class="w3-quarter w3-margin">
+		      <img src="images/Imagen7.png" onclick="onClick(this)" class="w3-hover-opacity" width="201px" height="183px" alt="A microphone"
+		      ><br>
+			  <a href="https://www.minsal.cl/">Ministerio de Salud</a>
+		    </div>
+		</div>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  </p>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+document.getElementsByClassName("tablink")[0].click();
+
+function openNosotros(evt, nosotrosName) {
+	var i, x, tablinks;
+	x = document.getElementsByClassName("nosotros");
+	for (i = 0; i < x.length; i++) {
+	x[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < x.length; i++) {
+	tablinks[i].classList.remove("w3-light-grey");
+	}
+	document.getElementById(nosotrosName).style.display = "block";
+	evt.currentTarget.classList.add("w3-light-grey");
+}
+</script>
+
+</body>
+</html>
