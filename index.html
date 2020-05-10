@@ -39,10 +39,10 @@ body, html {
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
       <a href="#home" class="w3-bar-item w3-button">INICIO</a>
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user"></i> NOSOTROS</a>
-      <a href="#services" class="w3-bar-item w3-button"><i class="fa fa-th"></i> SERVICIOS</a>
-      <a href="#clients" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> CLIENTES</a>
-      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACTOS</a>
+      <a href="#about" class="w3-bar-item w3-button">NOSOTROS</a>
+      <a href="#services" class="w3-bar-item w3-button">SERVICIOS</a>
+      <a href="#clients" class="w3-bar-item w3-button">CLIENTES</a>
+      <a href="#contact" class="w3-bar-item w3-button">CONTACTOS</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
@@ -63,7 +63,7 @@ body, html {
 </nav>
 
 <!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+<header class="bgimg-1 w3-display-container w3-grayscale-min w3-animate-opacity" id="home">
   <div class="w3-display-left w3-text-white" style="padding:48px">
     <span class="w3-jumbo w3-hide-small">APS Integral</span><br>
     <span class="w3-xxlarge w3-hide-large w3-hide-medium">APS Integral</span><br>
@@ -71,14 +71,13 @@ body, html {
     <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Conocenos</a></p>
   </div> 
   <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/apsintegral.cl"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/apsintegral/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  
+  <a href="https://twitter.com/aps_integral"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/aps-integral-8562b7187/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
-  <div><br><br><br><br><br><br><img src="images/18770.svg" style="display: block; margin-left: auto; margin-top: auto; width: 50%"></div>
+  <div><br><br><br><br><br><br><img src="images/18770.svg" style="display: block; margin-left: auto; margin-top: auto; width: 70%" class="w3-animate-opacity"></div>
 </header>
 
 <!-- SECCIÓN NOSOTROS -->
@@ -90,10 +89,10 @@ body, html {
 
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-third">
-      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round-large w3-jumbo w3-hover-black" style='background-color:#438fc9;color:white'>Misión</button>
+      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-round-large w3-jumbo w3-hover-black" style='background-color:#438fc9;color:white'> &nbsp Misión &nbsp </button>
     </div>
     <div class="w3-third">
-      <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round-large w3-jumbo w3-hover-black" style='background-color:#49abdc; color:white'>Visión</button>
+      <button onclick="document.getElementById('id02').style.display='block'" class="w3-button w3-round-large w3-jumbo w3-hover-black" style='background-color:#49abdc; color:white'> &nbsp Visión &nbsp </button>
     </div>
     <div class="w3-third">
       <button onclick="document.getElementById('id03').style.display='block'" class="w3-button w3-round-large w3-jumbo w3-hover-black" style='background-color:#3fbce8; color:white'>Valores</button>
@@ -101,15 +100,18 @@ body, html {
   </div>
 </div>
 
+
 <!-- MODAL MISIÓN -->
 <div id="id01" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#438fc9;'>
+      <h1 style='color:white;'>Misión</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Misión</b></h3>
 	      <p>
           <ul>
-  				  <li>Contribuir en integral la seguridad y salud ocupacional en la cultura de las empresas.</li>
+  				  <li>Contribuir en integrar la seguridad y salud ocupacional en la cultura de las empresas.</li>
   				  <li>Promover una cultura de autocuidado en lo trabajadores a través de información, formación y conocimientos.</li>
   		    	<li>Mejorar los estándares de seguridad y salud ocupacional de las empresas a través de soluciones integrales que permitan mantener la continuidad operativa de sus procesos productivos.</li>
           </ul>  
@@ -124,9 +126,11 @@ body, html {
 <!-- MODAL VISIÓN -->
 <div id="id02" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#49abdc;'>
+      <h1 style='color:white;'>Visión</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id02').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Visión</b></h3>
 	      <p>Ser, para nuestros clientes, un socio de confianza más allá del ámbito profesional.</p>
 	  <div class="w3-container w3-padding">
 	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id02').style.display='none'">Cerrar</button>
@@ -138,9 +142,11 @@ body, html {
 <!-- MODAL VALORES -->
 <div id="id03" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#3fbce8;'>
+      <h1 style='color:white;'>Visión</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id03').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Valores</b></h3>
 	      <p>Nuestro trabajo no puede encontrase ajeno a nuestra vocación, por lo cual, nuestros valores son:
 	      	<ul>
 				<li><b>Responsabilidad:</b> Adquirimos un compromiso con nuestros clientes, siendo consientes de los recursos disponibles y proponiendo metas alcanzables.</li>
@@ -155,6 +161,7 @@ body, html {
   </div>
 </div>
 
+
 <!-- NUESTOS SERVICIOS -->
 <div class="w3-container" style="padding:128px 16px" id="services">
   <h1 class="w3-center">NUESTOS SERVICIOS</h1>
@@ -162,10 +169,10 @@ body, html {
 
     <div class="w3-col w3-margin-bottom w3-third">
       <div class="w3-card">
-        <img src="images/icon1.png" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="images/icon1.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto;">
         <div class="w3-container">
           <h3>Asesoría</h3>
-          <p>Asesoramos sobre la normativa legal existente en materia de seguridad y salud ocupacional.</p>
+          <p>Asesoramos sobre la normativa legal existente en materia de seguridad y salud ocupacional.</p><br>
           <p><button onclick="document.getElementById('id04').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
         </div>
       </div>
@@ -173,7 +180,7 @@ body, html {
 
     <div class="w3-col w3-margin-bottom w3-third">
       <div class="w3-card">
-        <img src="images/icon2.png" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="images/icon2.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto;">
         <div class="w3-container">
           <h3>Instrumentos de Prevención</h3>
           <p>Elaboramos los instrumentos básicos de prevención que debe contar toda empresa, de acuerdo a la legislación existente.</p>
@@ -184,10 +191,10 @@ body, html {
 
     <div class="w3-col w3-margin-bottom w3-third">
       <div class="w3-card">
-        <img src="images/icon3.png" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="images/icon3.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto;">
         <div class="w3-container">
           <h3>Identificación de Peligros</h3>
-          <p>Identificamos los peligros, evaluamos sus riesgos y proponemos las medidas para su control.</p>
+          <p>Identificamos los peligros, evaluamos sus riesgos y proponemos las medidas para su control.</p><br>
           <p><button onclick="document.getElementById('id06').style.display='block'" class="w3-button w3-blue-gray w3-block">Leer Más</button></p>
         </div>
       </div>
@@ -195,7 +202,7 @@ body, html {
 
     <div class="w3-col w3-margin-bottom w3-half">
       <div class="w3-card">
-        <img src="images/icon4.png" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="images/icon4.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto;">
         <div class="w3-container">
           <h3>Capacitaciones</h3>
           <p>Realizamos capacitaciones y charlas de seguridad.</p>
@@ -206,7 +213,7 @@ body, html {
 
     <div class="w3-col w3-margin-bottom w3-half">
       <div class="w3-card">
-        <img src="images/icon5.png" style="display: block; margin-left: auto; margin-right: auto;">
+        <img src="images/icon5.png" style="display: block; margin-left: auto; margin-right: auto; margin-top: auto;">
         <div class="w3-container">
           <h3>Planes y Procedimientos</h3>
           <p>Elaboramos procedimientos y planes de emergencia.</p>
@@ -217,12 +224,15 @@ body, html {
   </div>
 </div>
 
+
 <!-- MODAL ASESORÍA -->
 <div id="id04" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#3fbce8;'>
+      <h1 style='color:white;'>Asesoría</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id04').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Asesoría</b></h3>
 	      <p><ul>
 				<li><b>Ley Nº 16.744:</b> Sobre accidentes de trabajo y enfermedades profesionales.</li>
 				<li><b>DS Nº 594:</b> Sobre condiciones sanitarias y ambientales básicas en los lugares de trabajo.nosotros y como nos puede ayudar en el trabajo, e indirectamente también en nuestros hogares.</li>
@@ -239,9 +249,11 @@ body, html {
 <!-- MODAL PREVENCIÓN -->
 <div id="id05" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#3fbce8;'>
+      <h1 style='color:white;'>Instrumentos de Prevención</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id05').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Instrumentos de Prevención</b></h3>
 	      <p><ul>
 				<li>Reglamento Interno de Higiene y Seguridad.</li>
 				<li>Reglamento Interno de Orden Higiene y Seguridad.</li>
@@ -258,9 +270,11 @@ body, html {
 <!-- MODAL PELIGROS -->
 <div id="id06" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#3fbce8;'>
+      <h1 style='color:white;'>Identificación de Peligros</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id06').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Identificación de Peligros</b></h3>
 	      <p><ul>
 				<li>Evaluación y análisis de las condiciones de seguridad y medioambientales en los lugares de trabajo.</li>
 				<li>Análisis de seguridad en el trabajo.</li>
@@ -276,13 +290,15 @@ body, html {
 <!-- MODAL CAPACITACIONES -->
 <div id="id07" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#3fbce8;'>
+      <h1 style='color:white;'>Capacitaciones</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id07').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Capacitaciones</b></h3>
 	      <p><ul>
 				<li>Constitución y asesoría a Comités Paritarios.</li>
 				<li>Charlas de seguridad 5 minutos.</li>
-				<li>Trabajador Nuevo.</li>
+				<li>Inducción Trabajador Nuevo.</li>
 			</ul></p>
 	  <div class="w3-container w3-padding">
 	  	<button class="w3-button w3-right w3-white w3-border" onclick="document.getElementById('id07').style.display='none'">Cerrar</button>
@@ -294,9 +310,11 @@ body, html {
 <!-- MODAL PLANES -->
 <div id="id08" class="w3-modal">
   <div class="w3-modal-content">
+    <header class="w3-container" style='background-color:#3fbce8;'>
+      <h1 style='color:white;'>Planes y Procedimientos</h1>
+    </header>
     <div class="w3-container">
       <span onclick="document.getElementById('id08').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-      <h3 class="w3-large"><b>Planes y Procedimientos</b></h3>
 	      <p><ul>
 				<li>Plan de Preparación y Respuesta ante una Emergencias.</li>
 				<li>Programa de Actividades de Prevención de Riesgos Laborales.</li>
@@ -309,47 +327,48 @@ body, html {
   </div>
 </div>
 
+
 <!-- CLIENTES Section -->
 <div class="w3-container" style="padding:128px 16px" id="clients">
   <h1 class="w3-center">NUESTROS CLIENTES</h1>
-  <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6">
-      <img src="images/Imagen1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="images/Imagen2.png"  style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="images/Imagen3.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
-    </div>
-    <div class="w3-col l3 m6">
-      <img src="images/Imagen4.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
-    </div>
-  </div>
+  <br>
 
-  <div class="w3-row-padding w3-section">
-    <div class="w3-col l3 m6">
+<!-- Slideshow -->
+  <div class="w3-container">
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Imagen1.png" style="width:50%">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="images/Imagen5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Imagen2.png" style="width:50%">
     </div>
-    <div class="w3-col l3 m6">
-      <img src="images/Imagen6.png"  style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Imagen3.png" style="width:50%">
     </div>
-    <div class="w3-col l3 m6">
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Imagen4.png" style="width:50%">
     </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Imagen5.jpg" style="width:50%">
+    </div>
+    <div class="w3-display-container mySlides w3-center">
+      <img src="images/Imagen6.png" style="width:50%">
+    </div>
+    <!-- Slideshow next/previous buttons -->
+    <div class="w3-center w3-xlarge w3-third" onclick="plusDivs(-1)"><i class="fa fa-arrow-circle-left w3-hover-text-teal"></i></div>  
+    <div class="w3-container w3-third"> 
+      <div class="w3-center">
+        <span class="demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+        <span class="demodots w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+      </div>
+    </div>
+    <div class="w3-center w3-xlarge w3-third" onclick="plusDivs(1)"><i class="fa fa-arrow-circle-right w3-hover-text-teal"></i></div>
   </div>
+        
+      
 </div>
-
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">&times;</span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
-
 
 <!-- Contact Section -->
 <div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
@@ -361,14 +380,14 @@ body, html {
 		<br>
 	    <div class="w3-half">
 		    <form action="/action_page.php" target="_blank">
-		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Nombre" required name="Nombre"></p>
-		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Apellido" required name="Apellido"></p>
+		      <div class="w3-half"><p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Nombre" required name="Nombre"></p></div>
+		      <div class="w3-half"><p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Apellido" required name="Apellido"></p></div>
 		      <p><input class="w3-input w3-border w3-light-grey" type="email" placeholder="Email" required name="Email"></p>
 		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Asunto" required name="Asunto"></p>
 		      <p><input class="w3-input w3-border w3-light-grey" type="text" placeholder="Mensaje" required name="Mensaje"></p>
 		      <p>
 		        <button class="w3-button w3-black" type="submit">
-		          <i class="fa fa-paper-plane"></i> ENVIAR
+		          <i class="fa fa-paper-plane"></i>ENVIAR
 		        </button>
 		      </p>
 		    </form>
@@ -376,9 +395,7 @@ body, html {
 		<div class="w3-quarter">&nbsp</div>
 		<div>
 			<div class="w3-quarter w3-margin">
-		      <img src="images/Imagen7.png" onclick="onClick(this)" class="w3-hover-opacity" width="201px" height="183px" alt="A microphone"
-		      ><br>
-			  <a href="https://www.minsal.cl/">Ministerio de Salud</a>
+		      <a href="https://www.minsal.cl/"><img src="images/Imagen7.png" class="w3-hover-opacity" width="201px" height="183px"></a><br>
 		    </div>
 		</div>
 	</div>
@@ -388,56 +405,59 @@ body, html {
 <footer class="w3-center w3-black w3-padding-64">
   <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <a href="https://www.facebook.com/apsintegral.cl"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/apsintegral/"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/aps_integral"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="http://www.linkedin.com/in/aps-integral-8562b7187/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
   </div>
   </p>
 </footer>
  
 <script>
-// Modal Image Gallery
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
 
-// Toggle between showing and hiding the sidebar when clicking the menu icon
-var mySidebar = document.getElementById("mySidebar");
-
-function w3_open() {
-  if (mySidebar.style.display === 'block') {
-    mySidebar.style.display = 'none';
-  } else {
-    mySidebar.style.display = 'block';
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
+    }
   }
-}
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-}
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
 
-document.getElementsByClassName("tablink")[0].click();
 
-function openNosotros(evt, nosotrosName) {
-	var i, x, tablinks;
-	x = document.getElementsByClassName("nosotros");
-	for (i = 0; i < x.length; i++) {
-	x[i].style.display = "none";
-	}
-	tablinks = document.getElementsByClassName("tablink");
-	for (i = 0; i < x.length; i++) {
-	tablinks[i].classList.remove("w3-light-grey");
-	}
-	document.getElementById(nosotrosName).style.display = "block";
-	evt.currentTarget.classList.add("w3-light-grey");
-}
+  // Slideshow
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function currentDiv(n) {
+    showDivs(slideIndex = n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("demodots");
+    if (n > x.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" w3-white", "");
+    }
+    x[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " w3-white";
+  }
 </script>
 
 </body>
