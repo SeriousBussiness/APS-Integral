@@ -46,7 +46,7 @@
       }
 
       $ccontacto="";
-      $ccontacto= "Se ha enviado un mensaje por contactame de parte de ". $cnombre ."". $capellido."(".$cemail."):".$cmensaje;   
+      $ccontacto= "Se ha enviado un mensaje por contactame de parte de ". $cnombre ." ". $capellido."(".$cemail."):".$cmensaje;   
 
     // Content
     $mail->isHTML(true);                                  // Set email format to HTML
